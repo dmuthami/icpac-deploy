@@ -1,0 +1,226 @@
+{% extends "site_base.html" %}
+{% load i18n %}
+{% load staticfiles %}
+{% load base_tags %}
+
+{% block title %} {% trans "Welcome!" %} - {{ block.super}} {% endblock %}
+
+{% block body_class %}home{% endblock %}
+
+{% block middle %}
+{{ block.super}}
+{% block hero %}
+<div id="myCarousel" class="carousel slide" data-ride="carousel">
+    <!-- Indicators -->
+    <ol class="carousel-indicators">
+        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+        <li data-target="#myCarousel" data-slide-to="1"></li>
+        <li data-target="#myCarousel" data-slide-to="2"></li>
+    </ol>
+
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner" role="listbox">
+        <div class="item active">
+            <img src="{{ STATIC_URL}}geonode/img/layerslider01.jpg" alt="">
+            <div class="container">
+                <div class="carousel-caption">
+                    <h1>Welcome to the <strong>ICPAC </strong>Geoportal</h1>
+                    <p class="lead">Our corporate web application for creating and sharing geospatial <br>
+                        data and maps designed for non-GIS experts.</p>
+                    <a class="btn btn-danger" href="/appsportal/">Get Started</a>
+                    <p class="image-credit">Image Credit: NASA</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="item">
+            <img src="{{ STATIC_URL}}geonode/img/layerslider02.jpg" alt="">
+            <div class="container">
+                <div class="carousel-caption">
+                    <h1>Interactive mapping</h1>
+                    <p class="lead">You can combine already existing layers with your own data to create<br>
+                        powerful interactive maps accessible from all devices.</p>
+                    <a class="btn btn-danger" href="/maps/">Explore Maps</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="item">
+            <img  src="{{ STATIC_URL}}geonode/img/layerslider03.jpg" alt="">
+            <div class="container">
+                <div class="carousel-caption">
+                    <h1>GIS data standardization</h1>
+                    <p class="lead">GeoPortal architected on GeoNode facilitates data standardization within our organization by providing<br>
+                        a clear process for uploading your gis data, compiling metadata and styling.</p>
+                    <a class="btn btn-danger" href="/upload/">Upload Layers</a>
+                    <p class="image-credit">Photo: WFP/Louis Hamann</p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Left and right controls -->
+    <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+    </a>
+    <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+    </a>
+</div>
+{% endblock %}
+<!--social -->
+{% with facet_type='home' %}
+{% facets as facets %}
+<section class="social">
+    <div class="row myrow">
+        <div class="col-md-3 mycolumn"><p class="myp"><a class="mya" href="/layers/">Layers <span class="mycount">{{ facets.layer|default:_("No") }} {% blocktrans count counter=facets.layer %}Layer{% plural %}Layers{% endblocktrans %}</span></a></p></div>
+        <div class="col-md-3 mycolumn"><p class="myp"><a class="mya" href="/maps/">Maps <span class="mycount">{{ facets.map|default:_("No") }} {% blocktrans count counter=facets.map %}Map{% plural %}Maps{% endblocktrans %}</span></a></p></div>
+        <div class="col-md-3 mycolumn"><p class="myp"><a class="mya" href="/documents/">Static Maps <span class="mycount">No Static Maps</span></a></p></div>
+        <div class="col-md-3 mycolumn"><p class="myp"><a class="mya" href="/people/">Users <span class="mycount">{{ facets.user|default:_("No") }} {% blocktrans count counter=facets.user %}User{% plural %}Users{% endblocktrans %}</span></a></p></div>
+    </div>
+</section>
+{% endwith %}
+<!--social -->
+<!--featured maps -->
+
+<div class="container">
+    <section class="featured-maps">
+        <h3>Featured Maps</h3>   
+        <div class="row">
+            <div class="col-md-3">
+                <div class="map-thumb">
+                    <a href="/maps/8/view" class="map-link">
+			<!-- 
+				8
+				layer-d8c6e792-d84d-11e6-aeda-525400cb6cf1-thumb.png
+			-->
+                        <img src="/uploaded/thumbs/gha_cof41_v2.png">
+                    </a>
+                    <div class="map-abstract">
+                        <p><a href="/maps/8/view"><strong class="ng-binding"></strong>, <em class="timestamp ng-binding">2015-04-22T09:37:00</em></a></p>
+                        <p><a href="/maps/8/view" class="ng-binding">Statement from the forty fourth greater horn of africa climate Outlook forum (ghacof41) for october to december 2016 rainfall Season: 29-30 august 2016; speke resort munyonyo, kampala, uganda</a></p>
+                    </div>
+                    <div class="map-title"><a href="/maps/8/view" class="map-link ng-binding">GHACOF 41 Map</a></div>
+                    <div class="views pull-right ng-binding"><i class="icon-eye-open"></i>192</div>
+                </div><!-- map-thumb -->
+            </div><!-- col-md-3 -->
+
+            <div class="col-md-3">
+                <div class="map-thumb">
+                    <a href="/maps/10/view" class="map-link">
+			<!-- 
+				10
+				map-61977f4c-d857-11e6-8f80-525400cb6cf1-thumb.png
+			-->
+                        <img src="/uploaded/thumbs/ethiopia_temperature_v2.png">
+                    </a>
+                    <div class="map-abstract">
+                        <p><a href="/maps/10/view"><strong class="ng-binding"></strong>, <em class="timestamp ng-binding">2014-01-21T11:56:00</em></a></p>
+                        <p><a href="/maps/10/view" class="ng-binding">The map represents temperatures in Ethiopia for the year 2016</a></p>
+                    </div>
+                    <div class="map-title"><a href="/maps/10/view" class="map-link ng-binding">Ethiopia Temperature Map</a></div>
+                    <div class="views pull-right ng-binding"><i class="icon-eye-open"></i>471</div>
+                </div><!-- map-thumb -->
+            </div><!-- col-md-3 -->
+
+            <div class="col-md-3">
+                <div class="map-thumb">
+                    <a href="/maps/7/view" class="map-link">
+			<!-- 
+				7
+				layer-c47d3af8-d84c-11e6-abd8-525400cb6cf1-thumb.png
+			-->
+                        <img src="/uploaded/thumbs/climaticzones_v2.png">
+                    </a>
+                    <div class="map-abstract">
+                        <p><a href="/maps/7/view"><strong class="ng-binding"></strong>, <em class="timestamp ng-binding">2014-01-20T10:53:00</em></a></p>
+                        <p><a href="/maps/7/view" class="ng-binding">This map represents the climatic zones in enya.</a></p>
+                    </div>
+                    <div class="map-title"><a href="/maps/7/view" class="map-link ng-binding">Climatic Zones Map</a></div>
+                    <div class="views pull-right ng-binding"><i class="icon-eye-open"></i>484</div>
+                </div><!-- map-thumb -->
+            </div><!-- col-md-3 -->            
+
+            <div class="col-md-3">
+                <div class="map-thumb">
+                    <a href="/maps/9/view" class="map-link">
+			<!-- 
+				9
+				map-e41fec72-d84f-11e6-92ff-525400cb6cf1-thumb.png
+			-->
+                        <img src="/uploaded/thumbs/ethiopia_precipitation_v2.png">
+                    </a>
+                    <div class="map-abstract">
+                        <p><a href="/maps/9/view"><strong class="ng-binding"></strong>, <em class="timestamp ng-binding">2014-01-20T10:53:00</em></a></p>
+                        <p><a href="/maps/9/view" class="ng-binding">This map shows the precipitation for Ethiopia. </a></p>
+                    </div>
+                    <div class="map-title"><a href="/maps/9/view" class="map-link ng-binding">Ethiopia Precipitation Map</a></div>
+                    <div class="views pull-right ng-binding"><i class="icon-eye-open"></i>258</div>
+                </div><!-- map-thumb -->
+            </div><!-- col-md-3 -->       
+
+        </div><!-- featured-maps -->        
+    </section>      
+</div>
+
+<!--featured maps -->
+{% block mainbody %}
+<div class="container">
+    <div class="row home-facets">
+        {% with facet_type='home' %}
+        {% facets as facets %}
+        <div class="col-md-4">
+            <p><a href="{% url "layer_browse" %}"><i class="fa fa-square-o fa-5x rotate-45"></i></a></p>
+            <h2><a href="{% url "layer_browse" %}">Explore Data</a></h2>
+            <p>{% trans "Click to search for geospatial data from our corporate SDI or published by other users, organizations and public sources." %}</p> 
+     
+        </div>
+        <div class="col-md-4">
+            <p><a href="{% url "maps_browse" %}"><i class="fa fa-map-marker fa-5x"></i></a></p>
+            <h2><a href="{% url "maps_browse" %}">Explore Maps</a></h2>
+            <p>{% trans "Data is available for browsing, aggregating and styling to generate maps which can be shared publicly or restricted to specific users only." %}</p>
+            
+        </div>
+        <div class="col-md-4">
+            <p><a href="{% url "data_upload" %}"><i class="fa fa-cloud-upload fa-5x"></i></a></p>
+            <!-- <h2><a href="{% url "profile_browse" %}">Upload Data</a></h2> -->
+            <h2><a href="{% url "data_upload" %}">Upload Data</a></h2>
+            <p>{% trans "GeoNode allows registered users for easily upload geospatial data in several formats including shapefile, GeoTiff and KML." %}</p>
+            
+        </div>
+        {% endwith %}
+    </div>
+</div>
+{% verbatim %}
+<div ng-app="featured">
+    <div ng-repeat="item in featured">
+        <!--{{ item.title }}-->
+    </div>
+</div>
+{% endverbatim %}
+{% endblock %}
+
+{% endblock %}
+
+{% block extra_script %}
+{% if DEBUG_STATIC %}
+<script src="{{ STATIC_URL}}lib/js/angular.js"></script>
+{% endif %}
+<script type="text/javascript">
+    FEATURED_URL = '{% url 'api_dispatch_list' api_name='api' resource_name='featured' %}'
+    'use strict';
+    (function () {
+        var module = angular.module('featured', []);
+        module.run(function ($http, $rootScope) {
+            $http.get(FEATURED_URL).success(function (data) {
+                $rootScope.featured = data.objects;
+            });
+        });
+    })();
+</script>
+
+{% endblock extra_script %}
+

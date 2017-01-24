@@ -1,0 +1,606 @@
+<!--  pycsw 1.10.0  -->
+<csw:GetRecordByIdResponse xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:inspire_common="http://inspire.ec.europa.eu/schemas/common/1.0" xmlns:rim="urn:oasis:names:tc:ebxml-regrep:xsd:rim:3.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:dct="http://purl.org/dc/terms/" xmlns:ows="http://www.opengis.net/ows" xmlns:apiso="http://www.opengis.net/cat/csw/apiso/1.0" xmlns:gml="http://www.opengis.net/gml" xmlns:dif="http://gcmd.gsfc.nasa.gov/Aboutus/xml/dif/" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:gco="http://www.isotc211.org/2005/gco" xmlns:gmd="http://www.isotc211.org/2005/gmd" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:srv="http://www.isotc211.org/2005/srv" xmlns:ogc="http://www.opengis.net/ogc" xmlns:fgdc="http://www.opengis.net/cat/csw/csdgm" xmlns:inspire_ds="http://inspire.ec.europa.eu/schemas/inspire_ds/1.0" xmlns:csw="http://www.opengis.net/cat/csw/2.0.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:os="http://a9.com/-/spec/opensearch/1.1/" xmlns:soapenv="http://www.w3.org/2003/05/soap-envelope" xmlns:sitemap="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:wrs="http://www.opengis.net/cat/wrs/1.0" xsi:schemaLocation="http://www.opengis.net/cat/csw/2.0.2 http://schemas.opengis.net/csw/2.0.2/CSW-discovery.xsd">
+<gmd:MD_Metadata xsi:schemaLocation="http://www.isotc211.org/2005/gmd http://www.isotc211.org/2005/gmd/gmd.xsd">
+<gmd:fileIdentifier>
+<gco:CharacterString>8da0b1d4-8326-11e6-894c-317fff0e7fe8</gco:CharacterString>
+</gmd:fileIdentifier>
+<gmd:language>
+<gco:CharacterString>eng</gco:CharacterString>
+</gmd:language>
+<gmd:characterSet>
+<gmd:MD_CharacterSetCode codeSpace="ISOTC211/19115" codeList="http://www.isotc211.org/2005/resources/Codelist/gmxCodelists.xml#MD_CharacterSetCode" codeListValue="utf8">utf8</gmd:MD_CharacterSetCode>
+</gmd:characterSet>
+<gmd:hierarchyLevel>
+<gmd:MD_ScopeCode codeSpace="ISOTC211/19115" codeList="http://www.isotc211.org/2005/resources/Codelist/gmxCodelists.xml#MD_ScopeCode" codeListValue="dataset">dataset</gmd:MD_ScopeCode>
+</gmd:hierarchyLevel>
+<gmd:contact>
+<gmd:CI_ResponsibleParty>
+<gmd:individualName gco:nilReason="missing"></gmd:individualName>
+<gmd:organisationName gco:nilReason="missing"></gmd:organisationName>
+<gmd:positionName gco:nilReason="missing"></gmd:positionName>
+<gmd:contactInfo>
+<gmd:CI_Contact>
+<gmd:phone>
+<gmd:CI_Telephone>
+<gmd:voice gco:nilReason="missing"></gmd:voice>
+<gmd:facsimile gco:nilReason="missing"></gmd:facsimile>
+</gmd:CI_Telephone>
+</gmd:phone>
+<gmd:address>
+<gmd:CI_Address>
+<gmd:deliveryPoint gco:nilReason="missing"></gmd:deliveryPoint>
+<gmd:city gco:nilReason="missing"></gmd:city>
+<gmd:administrativeArea gco:nilReason="missing"></gmd:administrativeArea>
+<gmd:postalCode gco:nilReason="missing"></gmd:postalCode>
+<gmd:country gco:nilReason="missing"></gmd:country>
+<gmd:electronicMailAddress>
+<gco:CharacterString>waruid@gmail.com</gco:CharacterString>
+</gmd:electronicMailAddress>
+</gmd:CI_Address>
+</gmd:address>
+</gmd:CI_Contact>
+</gmd:contactInfo>
+<gmd:role>
+<gmd:CI_RoleCode codeSpace="ISOTC211/19115" codeList="http://www.isotc211.org/2005/resources/Codelist/gmxCodelists.xml#CI_RoleCode" codeListValue="pointOfContact">pointOfContact</gmd:CI_RoleCode>
+</gmd:role>
+</gmd:CI_ResponsibleParty>
+</gmd:contact>
+<gmd:dateStamp>
+<gco:DateTime>2016-10-01T15:31:57Z</gco:DateTime>
+</gmd:dateStamp>
+<gmd:metadataStandardName>
+<gco:CharacterString>ISO 19115:2003 - Geographic information - Metadata</gco:CharacterString>
+</gmd:metadataStandardName>
+<gmd:metadataStandardVersion>
+<gco:CharacterString>ISO 19115:2003</gco:CharacterString>
+</gmd:metadataStandardVersion>
+<gmd:spatialRepresentationInfo/>
+<gmd:referenceSystemInfo>
+<gmd:MD_ReferenceSystem>
+<gmd:referenceSystemIdentifier>
+<gmd:RS_Identifier>
+<gmd:code>
+<gco:CharacterString>4326</gco:CharacterString>
+</gmd:code>
+<gmd:codeSpace>
+<gco:CharacterString>EPSG</gco:CharacterString>
+</gmd:codeSpace>
+<gmd:version>
+<gco:CharacterString>6.11</gco:CharacterString>
+</gmd:version>
+</gmd:RS_Identifier>
+</gmd:referenceSystemIdentifier>
+</gmd:MD_ReferenceSystem>
+</gmd:referenceSystemInfo>
+<gmd:identificationInfo>
+<gmd:MD_DataIdentification>
+<gmd:citation>
+<gmd:CI_Citation>
+<gmd:title>
+<gco:CharacterString>Greater Horn of Africa Climate Outlook Forum 41</gco:CharacterString>
+</gmd:title>
+<gmd:date>
+<gmd:CI_Date>
+<gmd:date>
+<gco:DateTime>2016-09-25T08:47:00Z</gco:DateTime>
+</gmd:date>
+<gmd:dateType>
+<gmd:CI_DateTypeCode codeSpace="ISOTC211/19115" codeList="http://www.isotc211.org/2005/resources/Codelist/gmxCodelists.xml#CI_DateTypeCode" codeListValue="publication">publication</gmd:CI_DateTypeCode>
+</gmd:dateType>
+</gmd:CI_Date>
+</gmd:date>
+<gmd:edition gco:nilReason="missing"></gmd:edition>
+<gmd:presentationForm>
+<gmd:CI_PresentationFormCode codeSpace="ISOTC211/19115" codeList="http://www.isotc211.org/2005/resources/Codelist/gmxCodelists.xml#CI_PresentationFormCode" codeListValue="mapDigital">mapDigital</gmd:CI_PresentationFormCode>
+</gmd:presentationForm>
+</gmd:CI_Citation>
+</gmd:citation>
+<gmd:abstract>
+<gco:CharacterString>
+Statement from the forty fourth greater horn of africa climate Outlook forum (ghacof44) for october to december 2016 rainfall Season: 29-30 august 2016; speke resort munyonyo, kampala, uganda
+</gco:CharacterString>
+</gmd:abstract>
+<gmd:purpose gco:nilReason="missing"></gmd:purpose>
+<gmd:status>
+<gmd:MD_ProgressCode codeSpace="ISOTC211/19115" codeList="http://www.isotc211.org/2005/resources/Codelist/gmxCodelists.xml#MD_ProgressCode" codeListValue="completed">completed</gmd:MD_ProgressCode>
+</gmd:status>
+<gmd:resourceMaintenance>
+<gmd:MD_MaintenanceInformation>
+<gmd:maintenanceAndUpdateFrequency>
+<gmd:MD_MaintenanceFrequencyCode codeSpace="ISOTC211/19115" codeList="http://www.isotc211.org/2005/resources/Codelist/gmxCodelists.xml#MD_MaintenanceFrequencyCode" codeListValue="quarterly">quarterly</gmd:MD_MaintenanceFrequencyCode>
+</gmd:maintenanceAndUpdateFrequency>
+</gmd:MD_MaintenanceInformation>
+</gmd:resourceMaintenance>
+<gmd:graphicOverview>
+<gmd:MD_BrowseGraphic>
+<gmd:fileName>
+<gco:CharacterString>
+http://127.0.0.1/uploaded/thumbs/layer-8da0b1d4-8326-11e6-894c-317fff0e7fe8-thumb.png
+</gco:CharacterString>
+</gmd:fileName>
+<gmd:fileDescription>
+<gco:CharacterString>
+Thumbnail for 'Greater Horn of Africa Climate Outlook Forum 41'
+</gco:CharacterString>
+</gmd:fileDescription>
+<gmd:fileType>
+<gco:CharacterString>image/png</gco:CharacterString>
+</gmd:fileType>
+</gmd:MD_BrowseGraphic>
+</gmd:graphicOverview>
+<gmd:resourceFormat>
+<gmd:MD_Format>
+<gmd:name>
+<gco:CharacterString>ESRI Shapefile</gco:CharacterString>
+</gmd:name>
+<gmd:version>
+<gco:CharacterString>1.0</gco:CharacterString>
+</gmd:version>
+</gmd:MD_Format>
+</gmd:resourceFormat>
+<gmd:descriptiveKeywords>
+<gmd:MD_Keywords>
+<gmd:keyword>
+<gco:CharacterString>East Africa</gco:CharacterString>
+</gmd:keyword>
+<gmd:type>
+<gmd:MD_KeywordTypeCode codeSpace="ISOTC211/19115" codeList="http://www.isotc211.org/2005/resources/Codelist/gmxCodelists.xml#MD_KeywordTypeCode" codeListValue="place">place</gmd:MD_KeywordTypeCode>
+</gmd:type>
+</gmd:MD_Keywords>
+</gmd:descriptiveKeywords>
+<gmd:resourceConstraints>
+<gmd:MD_LegalConstraints>
+<gmd:useConstraints>
+<gmd:MD_RestrictionCode codeSpace="ISOTC211/19115" codeList="http://www.isotc211.org/2005/resources/Codelist/gmxCodelists.xml#MD_RestrictionCode" codeListValue="license">license</gmd:MD_RestrictionCode>
+</gmd:useConstraints>
+<gmd:otherConstraints>
+<gco:CharacterString>
+Public Domain (PD): Works in the public domain may be used freely without the permission of the former copyright owner. (http://www.copyright.gov/help/faq/faq-definitions.html)
+</gco:CharacterString>
+</gmd:otherConstraints>
+</gmd:MD_LegalConstraints>
+</gmd:resourceConstraints>
+<gmd:resourceConstraints>
+<gmd:MD_LegalConstraints>
+<gmd:useConstraints>
+<gmd:MD_RestrictionCode codeSpace="ISOTC211/19115" codeList="http://www.isotc211.org/2005/resources/Codelist/gmxCodelists.xml#MD_RestrictionCode" codeListValue=""/>
+</gmd:useConstraints>
+<gmd:otherConstraints>
+<gco:CharacterString/>
+</gmd:otherConstraints>
+</gmd:MD_LegalConstraints>
+</gmd:resourceConstraints>
+<gmd:spatialRepresentationType>
+<gmd:MD_SpatialRepresentationTypeCode codeSpace="ISOTC211/19115" codeList="http://www.isotc211.org/2005/resources/Codelist/gmxCodelists.xml#MD_SpatialRepresentationTypeCode" codeListValue="vector">vector</gmd:MD_SpatialRepresentationTypeCode>
+</gmd:spatialRepresentationType>
+<gmd:language>
+<gco:CharacterString>eng</gco:CharacterString>
+</gmd:language>
+<gmd:characterSet>
+<gmd:MD_CharacterSetCode codeSpace="ISOTC211/19115" codeList="http://www.isotc211.org/2005/resources/Codelist/gmxCodelists.xml#MD_CharacterSetCode" codeListValue="utf8">utf8</gmd:MD_CharacterSetCode>
+</gmd:characterSet>
+<gmd:topicCategory>
+<gmd:MD_TopicCategoryCode>climatologyMeteorologyAtmosphere</gmd:MD_TopicCategoryCode>
+</gmd:topicCategory>
+<gmd:extent>
+<gmd:EX_Extent>
+<gmd:geographicElement>
+<gmd:EX_GeographicBoundingBox>
+<gmd:westBoundLongitude>
+<gco:Decimal>21.8150569910001</gco:Decimal>
+</gmd:westBoundLongitude>
+<gmd:eastBoundLongitude>
+<gco:Decimal>51.4156061210001</gco:Decimal>
+</gmd:eastBoundLongitude>
+<gmd:southBoundLatitude>
+<gco:Decimal>-11.761550889</gco:Decimal>
+</gmd:southBoundLatitude>
+<gmd:northBoundLatitude>
+<gco:Decimal>23.1572712240001</gco:Decimal>
+</gmd:northBoundLatitude>
+</gmd:EX_GeographicBoundingBox>
+</gmd:geographicElement>
+</gmd:EX_Extent>
+</gmd:extent>
+<gmd:extent>
+<gmd:EX_Extent>
+<gmd:temporalElement>
+<gmd:EX_TemporalExtent>
+<gmd:extent>
+<gml:TimePeriod gml:id="T_01">
+<gml:beginPosition>2016-09-30T23:30:00</gml:beginPosition>
+<gml:endPosition>2016-12-31T23:30:00</gml:endPosition>
+</gml:TimePeriod>
+</gmd:extent>
+</gmd:EX_TemporalExtent>
+</gmd:temporalElement>
+</gmd:EX_Extent>
+</gmd:extent>
+<gmd:supplementalInformation>
+<gco:CharacterString>
+The Forty Fourth Greater Horn of Africa Climate Outlook Forum (GHACOF44) was convened from 29-30 August 2016 at the Speke Resort Conference Centre Munyonyo, Kampala, Uganda by the IGAD Climate Prediction and Applications Centre (ICPAC) in collaboration with WMO, UNDP, USAID, DFID and other partners to formulate a consensus regional climate outlook for the October to December 2016 rainfall season over the GHA region. The GHA region comprises Burundi, Djibouti, Eritrea, Ethiopia, Kenya, Rwanda, Somalia, South Sudan, Sudan, Tanzania and Uganda. GHACOF44 was preceded by capacity building training workshop (CBTW) for the National climate scientists that was held from 15 to 26 August 2016 at ICPAC to develop national and regional climate outlooks for the season. The capacity building workshop for climate scientists was conducted alongside a workshop for regional oceanographic experts conducted at the Institute for Meteorological Training and Research (IMTR), Nairobi, Kenya.
+</gco:CharacterString>
+</gmd:supplementalInformation>
+</gmd:MD_DataIdentification>
+</gmd:identificationInfo>
+<gmd:distributionInfo>
+<gmd:MD_Distribution>
+<gmd:transferOptions>
+<gmd:MD_DigitalTransferOptions>
+<gmd:onLine>
+<gmd:CI_OnlineResource>
+<gmd:linkage>
+<gmd:URL>http://127.0.0.1/layers/geonode%3Agha_cof41</gmd:URL>
+</gmd:linkage>
+<gmd:protocol>
+<gco:CharacterString>WWW:LINK-1.0-http--link</gco:CharacterString>
+</gmd:protocol>
+<gmd:description>
+<gco:CharacterString>
+Online link to the 'Greater Horn of Africa Climate Outlook Forum 41' description on GeoNode
+</gco:CharacterString>
+</gmd:description>
+</gmd:CI_OnlineResource>
+</gmd:onLine>
+<gmd:onLine>
+<gmd:CI_OnlineResource>
+<gmd:linkage>
+<gmd:URL>
+http://127.0.0.1/geoserver/wms?layers=geonode%3Agha_cof41&amp;width=466&amp;bbox=21.8150569910001%2C-11.761550889%2C51.4156061210001%2C23.1572712240001&amp;service=WMS&amp;format=image%2Fjpeg&amp;srs=EPSG%3A4326&amp;request=GetMap&amp;height=550
+</gmd:URL>
+</gmd:linkage>
+<gmd:protocol>
+<gco:CharacterString>WWW:DOWNLOAD-1.0-http--download</gco:CharacterString>
+</gmd:protocol>
+<gmd:name>
+<gco:CharacterString>gha_cof41.jpg</gco:CharacterString>
+</gmd:name>
+<gmd:description>
+<gco:CharacterString>
+Greater Horn of Africa Climate Outlook Forum 41 (JPEG Format)
+</gco:CharacterString>
+</gmd:description>
+</gmd:CI_OnlineResource>
+</gmd:onLine>
+<gmd:onLine>
+<gmd:CI_OnlineResource>
+<gmd:linkage>
+<gmd:URL>
+http://127.0.0.1/geoserver/wms?layers=geonode%3Agha_cof41&amp;width=466&amp;bbox=21.8150569910001%2C-11.761550889%2C51.4156061210001%2C23.1572712240001&amp;service=WMS&amp;format=application%2Fpdf&amp;srs=EPSG%3A4326&amp;request=GetMap&amp;height=550
+</gmd:URL>
+</gmd:linkage>
+<gmd:protocol>
+<gco:CharacterString>WWW:DOWNLOAD-1.0-http--download</gco:CharacterString>
+</gmd:protocol>
+<gmd:name>
+<gco:CharacterString>gha_cof41.pdf</gco:CharacterString>
+</gmd:name>
+<gmd:description>
+<gco:CharacterString>
+Greater Horn of Africa Climate Outlook Forum 41 (PDF Format)
+</gco:CharacterString>
+</gmd:description>
+</gmd:CI_OnlineResource>
+</gmd:onLine>
+<gmd:onLine>
+<gmd:CI_OnlineResource>
+<gmd:linkage>
+<gmd:URL>
+http://127.0.0.1/geoserver/wms?layers=geonode%3Agha_cof41&amp;width=466&amp;bbox=21.8150569910001%2C-11.761550889%2C51.4156061210001%2C23.1572712240001&amp;service=WMS&amp;format=image%2Fpng&amp;srs=EPSG%3A4326&amp;request=GetMap&amp;height=550
+</gmd:URL>
+</gmd:linkage>
+<gmd:protocol>
+<gco:CharacterString>WWW:DOWNLOAD-1.0-http--download</gco:CharacterString>
+</gmd:protocol>
+<gmd:name>
+<gco:CharacterString>gha_cof41.png</gco:CharacterString>
+</gmd:name>
+<gmd:description>
+<gco:CharacterString>
+Greater Horn of Africa Climate Outlook Forum 41 (PNG Format)
+</gco:CharacterString>
+</gmd:description>
+</gmd:CI_OnlineResource>
+</gmd:onLine>
+<gmd:onLine>
+<gmd:CI_OnlineResource>
+<gmd:linkage>
+<gmd:URL>
+http://127.0.0.1/geoserver/wfs?format_options=charset%3AUTF-8&amp;typename=geonode%3Agha_cof41&amp;outputFormat=SHAPE-ZIP&amp;version=1.0.0&amp;service=WFS&amp;request=GetFeature
+</gmd:URL>
+</gmd:linkage>
+<gmd:protocol>
+<gco:CharacterString>WWW:DOWNLOAD-1.0-http--download</gco:CharacterString>
+</gmd:protocol>
+<gmd:name>
+<gco:CharacterString>gha_cof41.zip</gco:CharacterString>
+</gmd:name>
+<gmd:description>
+<gco:CharacterString>
+Greater Horn of Africa Climate Outlook Forum 41 (Zipped Shapefile Format)
+</gco:CharacterString>
+</gmd:description>
+</gmd:CI_OnlineResource>
+</gmd:onLine>
+<gmd:onLine>
+<gmd:CI_OnlineResource>
+<gmd:linkage>
+<gmd:URL>
+http://127.0.0.1/geoserver/wfs?typename=geonode%3Agha_cof41&amp;outputFormat=gml2&amp;version=1.0.0&amp;request=GetFeature&amp;service=WFS
+</gmd:URL>
+</gmd:linkage>
+<gmd:protocol>
+<gco:CharacterString>WWW:DOWNLOAD-1.0-http--download</gco:CharacterString>
+</gmd:protocol>
+<gmd:name>
+<gco:CharacterString>gha_cof41.gml</gco:CharacterString>
+</gmd:name>
+<gmd:description>
+<gco:CharacterString>
+Greater Horn of Africa Climate Outlook Forum 41 (GML 2.0 Format)
+</gco:CharacterString>
+</gmd:description>
+</gmd:CI_OnlineResource>
+</gmd:onLine>
+<gmd:onLine>
+<gmd:CI_OnlineResource>
+<gmd:linkage>
+<gmd:URL>
+http://127.0.0.1/geoserver/wfs?typename=geonode%3Agha_cof41&amp;outputFormat=text%2Fxml%3B+subtype%3Dgml%2F3.1.1&amp;version=1.0.0&amp;request=GetFeature&amp;service=WFS
+</gmd:URL>
+</gmd:linkage>
+<gmd:protocol>
+<gco:CharacterString>WWW:DOWNLOAD-1.0-http--download</gco:CharacterString>
+</gmd:protocol>
+<gmd:name>
+<gco:CharacterString>gha_cof41.gml</gco:CharacterString>
+</gmd:name>
+<gmd:description>
+<gco:CharacterString>
+Greater Horn of Africa Climate Outlook Forum 41 (GML 3.1.1 Format)
+</gco:CharacterString>
+</gmd:description>
+</gmd:CI_OnlineResource>
+</gmd:onLine>
+<gmd:onLine>
+<gmd:CI_OnlineResource>
+<gmd:linkage>
+<gmd:URL>
+http://127.0.0.1/geoserver/wfs?typename=geonode%3Agha_cof41&amp;outputFormat=csv&amp;version=1.0.0&amp;request=GetFeature&amp;service=WFS
+</gmd:URL>
+</gmd:linkage>
+<gmd:protocol>
+<gco:CharacterString>WWW:DOWNLOAD-1.0-http--download</gco:CharacterString>
+</gmd:protocol>
+<gmd:name>
+<gco:CharacterString>gha_cof41.csv</gco:CharacterString>
+</gmd:name>
+<gmd:description>
+<gco:CharacterString>
+Greater Horn of Africa Climate Outlook Forum 41 (CSV Format)
+</gco:CharacterString>
+</gmd:description>
+</gmd:CI_OnlineResource>
+</gmd:onLine>
+<gmd:onLine>
+<gmd:CI_OnlineResource>
+<gmd:linkage>
+<gmd:URL>
+http://127.0.0.1/geoserver/wfs?typename=geonode%3Agha_cof41&amp;outputFormat=excel&amp;version=1.0.0&amp;request=GetFeature&amp;service=WFS
+</gmd:URL>
+</gmd:linkage>
+<gmd:protocol>
+<gco:CharacterString>WWW:DOWNLOAD-1.0-http--download</gco:CharacterString>
+</gmd:protocol>
+<gmd:name>
+<gco:CharacterString>gha_cof41.excel</gco:CharacterString>
+</gmd:name>
+<gmd:description>
+<gco:CharacterString>
+Greater Horn of Africa Climate Outlook Forum 41 (Excel Format)
+</gco:CharacterString>
+</gmd:description>
+</gmd:CI_OnlineResource>
+</gmd:onLine>
+<gmd:onLine>
+<gmd:CI_OnlineResource>
+<gmd:linkage>
+<gmd:URL>
+http://127.0.0.1/geoserver/wfs?srsName=EPSG%3A4326&amp;typename=geonode%3Agha_cof41&amp;outputFormat=json&amp;version=1.0.0&amp;service=WFS&amp;request=GetFeature
+</gmd:URL>
+</gmd:linkage>
+<gmd:protocol>
+<gco:CharacterString>WWW:DOWNLOAD-1.0-http--download</gco:CharacterString>
+</gmd:protocol>
+<gmd:name>
+<gco:CharacterString>gha_cof41.json</gco:CharacterString>
+</gmd:name>
+<gmd:description>
+<gco:CharacterString>
+Greater Horn of Africa Climate Outlook Forum 41 (GeoJSON Format)
+</gco:CharacterString>
+</gmd:description>
+</gmd:CI_OnlineResource>
+</gmd:onLine>
+<gmd:onLine>
+<gmd:CI_OnlineResource>
+<gmd:linkage>
+<gmd:URL>
+http://127.0.0.1/geoserver/wms/kml?layers=geonode%3Agha_cof41&amp;mode=download
+</gmd:URL>
+</gmd:linkage>
+<gmd:protocol>
+<gco:CharacterString>WWW:DOWNLOAD-1.0-http--download</gco:CharacterString>
+</gmd:protocol>
+<gmd:name>
+<gco:CharacterString>gha_cof41.kml</gco:CharacterString>
+</gmd:name>
+<gmd:description>
+<gco:CharacterString>
+Greater Horn of Africa Climate Outlook Forum 41 (KML Format)
+</gco:CharacterString>
+</gmd:description>
+</gmd:CI_OnlineResource>
+</gmd:onLine>
+<gmd:onLine>
+<gmd:CI_OnlineResource>
+<gmd:linkage>
+<gmd:URL>
+http://127.0.0.1/geoserver/wms/kml?layers=geonode%3Agha_cof41&amp;mode=refresh
+</gmd:URL>
+</gmd:linkage>
+<gmd:protocol>
+<gco:CharacterString>WWW:DOWNLOAD-1.0-http--download</gco:CharacterString>
+</gmd:protocol>
+<gmd:name>
+<gco:CharacterString>gha_cof41.kml</gco:CharacterString>
+</gmd:name>
+<gmd:description>
+<gco:CharacterString>
+Greater Horn of Africa Climate Outlook Forum 41 (View in Google Earth Format)
+</gco:CharacterString>
+</gmd:description>
+</gmd:CI_OnlineResource>
+</gmd:onLine>
+<gmd:onLine>
+<gmd:CI_OnlineResource>
+<gmd:linkage>
+<gmd:URL>
+http://127.0.0.1/geoserver/gwc/service/gmaps?layers=geonode:gha_cof41&amp;zoom={z}&amp;x={x}&amp;y={y}&amp;format=image/png8
+</gmd:URL>
+</gmd:linkage>
+<gmd:protocol>
+<gco:CharacterString>WWW:DOWNLOAD-1.0-http--download</gco:CharacterString>
+</gmd:protocol>
+<gmd:name>
+<gco:CharacterString>gha_cof41.tiles</gco:CharacterString>
+</gmd:name>
+<gmd:description>
+<gco:CharacterString>
+Greater Horn of Africa Climate Outlook Forum 41 (Tiles Format)
+</gco:CharacterString>
+</gmd:description>
+</gmd:CI_OnlineResource>
+</gmd:onLine>
+<gmd:onLine>
+<gmd:CI_OnlineResource>
+<gmd:linkage>
+<gmd:URL>
+http://127.0.0.1/geoserver/wms/reflect?layers=geonode:gha_cof41&amp;width=200&amp;height=150&amp;format=image/png8
+</gmd:URL>
+</gmd:linkage>
+<gmd:protocol>
+<gco:CharacterString>WWW:DOWNLOAD-1.0-http--download</gco:CharacterString>
+</gmd:protocol>
+<gmd:name>
+<gco:CharacterString>gha_cof41.png</gco:CharacterString>
+</gmd:name>
+<gmd:description>
+<gco:CharacterString>
+Greater Horn of Africa Climate Outlook Forum 41 (Remote Thumbnail Format)
+</gco:CharacterString>
+</gmd:description>
+</gmd:CI_OnlineResource>
+</gmd:onLine>
+<gmd:onLine>
+<gmd:CI_OnlineResource>
+<gmd:linkage>
+<gmd:URL>
+http://127.0.0.1/uploaded/thumbs/layer-8da0b1d4-8326-11e6-894c-317fff0e7fe8-thumb.png
+</gmd:URL>
+</gmd:linkage>
+<gmd:protocol>
+<gco:CharacterString>WWW:DOWNLOAD-1.0-http--download</gco:CharacterString>
+</gmd:protocol>
+<gmd:name>
+<gco:CharacterString>gha_cof41.png</gco:CharacterString>
+</gmd:name>
+<gmd:description>
+<gco:CharacterString>
+Greater Horn of Africa Climate Outlook Forum 41 (Thumbnail Format)
+</gco:CharacterString>
+</gmd:description>
+</gmd:CI_OnlineResource>
+</gmd:onLine>
+<gmd:onLine>
+<gmd:CI_OnlineResource>
+<gmd:linkage>
+<gmd:URL>
+http://127.0.0.1/geoserver/wms?request=GetLegendGraphic&amp;format=image/png&amp;WIDTH=20&amp;HEIGHT=20&amp;LAYER=geonode:gha_cof41&amp;legend_options=fontAntiAliasing:true;fontSize:12;forceLabels:on
+</gmd:URL>
+</gmd:linkage>
+<gmd:protocol>
+<gco:CharacterString>WWW:DOWNLOAD-1.0-http--download</gco:CharacterString>
+</gmd:protocol>
+<gmd:name>
+<gco:CharacterString>gha_cof41.png</gco:CharacterString>
+</gmd:name>
+<gmd:description>
+<gco:CharacterString>
+Greater Horn of Africa Climate Outlook Forum 41 (Legend Format)
+</gco:CharacterString>
+</gmd:description>
+</gmd:CI_OnlineResource>
+</gmd:onLine>
+<gmd:onLine>
+<gmd:CI_OnlineResource>
+<gmd:linkage>
+<gmd:URL>http://127.0.0.1/geoserver/geonode/wms</gmd:URL>
+</gmd:linkage>
+<gmd:protocol>
+<gco:CharacterString>OGC:WMS</gco:CharacterString>
+</gmd:protocol>
+<gmd:name>
+<gco:CharacterString>Greater Horn of Africa Climate Outlook Forum 41</gco:CharacterString>
+</gmd:name>
+<gmd:description>
+<gco:CharacterString>
+geonode Service - Provides Layer: Greater Horn of Africa Climate Outlook Forum 41
+</gco:CharacterString>
+</gmd:description>
+</gmd:CI_OnlineResource>
+</gmd:onLine>
+<gmd:onLine>
+<gmd:CI_OnlineResource>
+<gmd:linkage>
+<gmd:URL>http://127.0.0.1/geoserver/geonode/wfs</gmd:URL>
+</gmd:linkage>
+<gmd:protocol>
+<gco:CharacterString>OGC:WFS</gco:CharacterString>
+</gmd:protocol>
+<gmd:name>
+<gco:CharacterString>Greater Horn of Africa Climate Outlook Forum 41</gco:CharacterString>
+</gmd:name>
+<gmd:description>
+<gco:CharacterString>
+geonode Service - Provides Layer: Greater Horn of Africa Climate Outlook Forum 41
+</gco:CharacterString>
+</gmd:description>
+</gmd:CI_OnlineResource>
+</gmd:onLine>
+</gmd:MD_DigitalTransferOptions>
+</gmd:transferOptions>
+</gmd:MD_Distribution>
+</gmd:distributionInfo>
+<gmd:dataQualityInfo>
+<gmd:DQ_DataQuality>
+<gmd:scope>
+<gmd:DQ_Scope>
+<gmd:level>
+<gmd:MD_ScopeCode codeSpace="ISOTC211/19115" codeList="http://www.isotc211.org/2005/resources/Codelist/gmxCodelists.xml#MD_ScopeCode" codeListValue="dataset">dataset</gmd:MD_ScopeCode>
+</gmd:level>
+</gmd:DQ_Scope>
+</gmd:scope>
+<gmd:lineage>
+<gmd:LI_Lineage>
+<gmd:statement>
+<gco:CharacterString>
+The forum examined the prevailing and expected ocean-atmosphere processes as well as evolving large scale and regional scale circulation systems with significant implications on GHA climate during October to December 2016. Key among these processes were current and evolving Sea Surface Temperature (SST) anomalies over global oceans, specifically the 50 to 60% probability for development of La Niña and continuation of a negative phase of Indian Ocean Dipole (IOD) coupled with the modulation of these processes by regional circulation systems. Implications of these on regional rainfall were integrated during a Pre-COF 44 Capacity Building Training Workshop (CBTW) that was organised by ICPAC from 15 to 26 August 2016 in Nairobi, Kenya. The Pre-COF 44 workshop also considered the global forecasts from the twelve World Meteorological Organization / Global Producing Centres (WMO/ GPCs) to generate the consensus regional climate outlook for the October to December 2016 season
+</gco:CharacterString>
+</gmd:statement>
+</gmd:LI_Lineage>
+</gmd:lineage>
+</gmd:DQ_DataQuality>
+</gmd:dataQualityInfo>
+</gmd:MD_Metadata>
+</csw:GetRecordByIdResponse>
